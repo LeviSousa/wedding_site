@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Diana e Emanuel - 27-06-2026</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+
+      margin: 0;
+
+      background-color: #fbf5f0;
+    }
+
+    section {
+      width: 90%;
+    }
+
+    h1 {
+      font-size: 120px;
+    }
+
+    h2 {
+      font-size: 90px;
+    }
+
+    h3 {
+      font-size: 60px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1;
+      margin: 0;
+      font-family: "Corinthia", cursive;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    iframe {
+      border: 0;
+      padding: 20px;
+      height: 450px;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 100%;
+      background-color: #dae0d1;
+      padding-bottom: 20px;
+    }
+
+    .title > h1 {
+      text-shadow: 2px 2px 2px #fbf5f0;
+    }
+
+    .title > h1,
+    .title > h3 {
+      line-height: 60px;
+      color: #2e3c25;
+    }
+
+    #diana_emanuel_img {
+      max-width: 360px;
+    }
+
+    .details-container {
+      display: flex;
+    }
+
+    .details-text-container {
+      width: 40%;
+    }
+
+    .details-img-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60%;
+    }
+
+    .details-img-container img {
+      width: 60%;
+      box-shadow:
+        rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    .rotate-clockwise {
+      transform: rotate(6deg);
+    }
+
+    .rotate-anticlockwise {
+      transform: rotate(-6deg);
+    }
+  </style>
+  <script>
+    var juneTwentySeventhET = 1782514800;
+
+    setInterval(() => {
+      var timeRemaining = juneTwentySeventhET - Date.now() / 1000;
+      var daysRemaining = Math.floor(timeRemaining / 60 / 60 / 24);
+      var hoursRemaining = Math.floor(timeRemaining / 60 / 60) % 60;
+      var minutesRemaining = Math.floor(timeRemaining / 60) % 60;
+      var secondsRemaining = Math.floor(timeRemaining) % 60;
+
+      document.querySelector("#countdown_days").textContent = daysRemaining;
+      document.querySelector("#countdown_hours").textContent = hoursRemaining;
+      document.querySelector("#countdown_minutes").textContent =
+        minutesRemaining;
+      document.querySelector("#countdown_seconds").textContent =
+        secondsRemaining;
+    }, 500);
+  </script>
+  <body>
+    <section class="title">
+      <h1>Diana e Emanuel</h1>
+      <img
+        src="media/Diana_E_Emanuel_2-color_transparent.png"
+        alt="diana_e_emanuel"
+        id="diana_emanuel_img"
+      />
+    </section>
+    <h2>27 junho 2026</h2>
+    <div>
+      <p>
+        Faltam
+        <span id="countdown_days">-</span>
+        dias
+        <span id="countdown_hours">-</span>
+        horas
+        <span id="countdown_minutes">-</span>
+        minutos
+        <span id="countdown_seconds">-</span>
+        segundos
+      </p>
+    </div>
+    <section>
+      <h3>Querida Família e Amigos</h3>
+      <p>
+        É com muita alegria que vos convidamos para o nosso casamento!
+        Gostávamos muito de contar convosco!
+      </p>
+    </section>
+    <h3>Cerimónia</h3>
+    <section class="details-container">
+      <div class="details-text-container">
+        <p>Igreja Paroquial de São Martinho de Cedofeita</p>
+        <p>14:00.</p>
+        <a href="https://maps.app.goo.gl/3aMWKVRYYaE8WNm96">Localização</a>
+      </div>
+      <div class="details-img-container rotate-clockwise">
+        <img src="media/igreja_color.png" alt="igreja" />
+      </div>
+    </section>
+    <h3>Copo de Água</h3>
+    <section class="details-container">
+      <div class="details-img-container rotate-anticlockwise">
+        <img src="media/quinta_color.png" alt="quinta" />
+      </div>
+      <div class="details-text-container">
+        <p>Quinta Alferes de Crasto</p>
+        <a href="https://maps.app.goo.gl/UtHQuoD1SBsNyBK58">Localização</a>
+      </div>
+    </section>
+  </body>
+</html>

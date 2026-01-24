@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
+      rel="stylesheet"
+    />
+    <title>Diana e Emanuel - 27-06-2026</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      gap: 30px;
+      align-items: center;
+      background-color: #525947;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+
+      position: relative;
+
+      background-color: #f9f6f1;
+      padding: 0.5rem;
+      width: 884px;
+      max-width: 80%;
+      box-shadow:
+        rgba(0, 0, 0, 0.07) 0px 1px 2px,
+        rgba(0, 0, 0, 0.07) 0px 2px 4px,
+        rgba(0, 0, 0, 0.07) 0px 4px 8px,
+        rgba(0, 0, 0, 0.07) 0px 8px 16px,
+        rgba(0, 0, 0, 0.07) 0px 16px 32px,
+        rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    }
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    h3 {
+      font-size: 2.5rem;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1;
+      margin: 0;
+      font-family: "Italianno", cursive;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    iframe {
+      border: 0;
+      padding: 20px;
+      height: 450px;
+    }
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      width: calc(884px - 20px);
+      max-width: calc(80% - 20px);
+
+      border: 20px solid;
+      border-image-source: url("media/wood_frame.png");
+      border-image-slice: 27 27 27 27;
+      border-image-width: 20px 20px 20px 20px;
+      border-image-outset: 0px 0px 0px 0px;
+      border-image-repeat: stretch stretch;
+    }
+  </style>
+  <script>
+    var juneTwentySeventhET = 1782514800;
+
+    setInterval(() => {
+      var timeRemaining = juneTwentySeventhET - Date.now() / 1000;
+      var daysRemaining = Math.floor(timeRemaining / 60 / 60 / 24);
+      var hoursRemaining = Math.floor(timeRemaining / 60 / 60) % 60;
+      var minutesRemaining = Math.floor(timeRemaining / 60) % 60;
+      var secondsRemaining = Math.floor(timeRemaining) % 60;
+
+      document.querySelector("#countdown_days").textContent = daysRemaining;
+      document.querySelector("#countdown_hours").textContent = hoursRemaining;
+      document.querySelector("#countdown_minutes").textContent =
+        minutesRemaining;
+      document.querySelector("#countdown_seconds").textContent =
+        secondsRemaining;
+    }, 500);
+  </script>
+  <body>
+    <section class="title">
+      <img
+        src="media/Diana_E_Emanuel_2-color_transparent.png"
+        alt="diana_e_emanuel"
+        height="400px"
+      />
+      <h1>Diana e Emanuel</h1>
+      <h3>27 junho 2026</h3>
+    </section>
+    <div>
+      <p>
+        Faltam
+        <span id="countdown_days">-</span>
+        dias
+        <span id="countdown_hours">-</span>
+        horas
+        <span id="countdown_minutes">-</span>
+        minutos
+        <span id="countdown_seconds">-</span>
+        segundos
+      </p>
+    </div>
+    <section>
+      <h1>Querida Família e Amigos</h1>
+      <p>
+        É com muita alegria que vos convidamos para o nosso casamento!
+        Gostávamos muito de contar convosco!
+      </p>
+    </section>
+    <section>
+      <h2>Cerimónia</h2>
+      <p>
+        A cerimónia terá lugar na Igreja Paroquial de São Martinho de Cedofeita,
+        às 14:00.
+      </p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d596.0761343874516!2d-8.621833751545044!3d41.15557812121655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2465013231d065%3A0x19c2f2698b2b56e9!2sIgreja%20Paroquial%20de%20S%C3%A3o%20Martinho%20de%20Cedofeita!5e0!3m2!1spt-PT!2spt!4v1769100099920!5m2!1spt-PT!2spt"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </section>
+    <section>
+      <h2>Copo de Água</h2>
+      <p>O Copo de Água será na Quinta Alferes de Crasto</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.3477339422197!2d-8.683071323513145!3d41.3230512999828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd244322c9a42bb1%3A0x415f431e5627e4f!2sQuinta%20do%20Alferes%20de%20Crasto!5e0!3m2!1spt-PT!2spt!4v1769100170923!5m2!1spt-PT!2spt"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </section>
+  </body>
+</html>
