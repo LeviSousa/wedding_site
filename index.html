@@ -31,14 +31,26 @@
 
     h1 {
       font-size: 120px;
+
+      @media (max-width: 600px) {
+        font-size: 60px;
+      }
     }
 
     h2 {
       font-size: 75px;
+
+      @media (max-width: 600px) {
+        font-size: 45px;
+      }
     }
 
     h3 {
       font-size: 60px;
+
+      @media (max-width: 600px) {
+        font-size: 30px;
+      }
     }
 
     h1,
@@ -81,6 +93,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @media (max-width: 600px) {
+        flex-direction: column;
+        flex-direction: column-reverse;
+      }
     }
 
     .title h1,
@@ -95,7 +112,7 @@
       flex-direction: column;
       gap: 30px;
 
-      width: 1000px;
+      max-width: 95%;
 
       padding: 20px;
     }
@@ -119,36 +136,29 @@
         font-weight: 400;
         font-style: normal;
       }
-    }
 
-    #igreja-img,
-    #quinta-img {
-      object-fit: cover;
-      width: 100%;
-    }
-
-    #igreja-img {
-      height: 420px;
-    }
-
-    #quinta-img {
-      object-position: 0px -216px;
-      height: 513px;
+      @media (max-width: 600px) {
+        padding: 5px;
+      }
     }
 
     #diana_emanuel_img {
       max-width: 360px;
+
+      @media (max-width: 600px) {
+        max-width: 260px;
+      }
     }
 
-    .drawings-container {
-      display: flex;
-
-      height: 400px;
+    #igreja-img,
+    #quinta-img {
       width: 100%;
+      margin-top: 10px;
+    }
 
-      img {
-        object-fit: cover;
-        width: 50%;
+    #tigre-img {
+      @media (max-width: 600px) {
+        width: 100px;
       }
     }
   </style>
@@ -224,12 +234,16 @@
             Que tragam prendas de alegria<br />
             E a festa dure até ser dia"<br />
           </i>
-          in A festa da vida
+          in "A festa da vida"
         </p>
       </section>
       <section>
         <h2>Cerimónia</h2>
-        <img src="media/igreja_no_bg.png" alt="igreja" id="igreja-img" />
+        <img
+          src="media/igreja_no_bg_cropped.png"
+          alt="igreja"
+          id="igreja-img"
+        />
         <div class="details-text-container">
           <p>Igreja Paroquial de São Martinho de Cedofeita</p>
           <p>14:00 horas</p>
@@ -238,7 +252,11 @@
       </section>
       <section>
         <h2>Copo de Água</h2>
-        <img src="media/quinta_no_bg.png" alt="quinta" id="quinta-img" />
+        <img
+          src="media/quinta_no_bg_cropped.png"
+          alt="quinta"
+          id="quinta-img"
+        />
         <div class="details-text-container">
           <p>Quinta Alferes de Crasto</p>
           <a href="https://maps.app.goo.gl/UtHQuoD1SBsNyBK58">Localização</a>
@@ -248,7 +266,7 @@
         <p>Por favor confirmem a vossa presença clicando no tigre!</p>
         <div style="width: 100%; text-align: center">
           <a href="">
-            <img src="media/tigre.png" alt="tigre_foi_facil" />
+            <img src="media/tigre.png" alt="tigre_foi_facil" id="tigre-img" />
           </a>
         </div>
       </section>
