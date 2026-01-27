@@ -30,8 +30,6 @@
     }
 
     h1 {
-      font-size: 120px;
-
       @media (max-width: 600px) {
         font-size: 60px;
       }
@@ -39,11 +37,13 @@
       @media (min-width: 600px) {
         font-size: 90px;
       }
+
+      @media (min-width: 992px) {
+        font-size: 120px;
+      }
     }
 
     h2 {
-      font-size: 75px;
-
       @media (max-width: 600px) {
         font-size: 45px;
       }
@@ -51,17 +51,23 @@
       @media (min-width: 600px) {
         font-size: 60px;
       }
+
+      @media (min-width: 992px) {
+        font-size: 75px;
+      }
     }
 
     h3 {
-      font-size: 60px;
-
       @media (max-width: 600px) {
         font-size: 30px;
       }
 
       @media (min-width: 600px) {
         font-size: 45px;
+      }
+
+      @media (min-width: 992px) {
+        font-size: 60px;
       }
     }
 
@@ -130,8 +136,12 @@
       gap: 30px;
 
       max-width: 95%;
-
       padding: 20px;
+
+      @media (min-width: 992px) {
+        max-width: 980px;
+        padding: 0;
+      }
     }
 
     .countdown {
@@ -160,14 +170,16 @@
     }
 
     #diana_emanuel_img {
-      max-width: 360px;
-
       @media (max-width: 600px) {
         max-width: 260px;
       }
 
       @media (min-width: 600px) {
         max-width: 300px;
+      }
+
+      @media (min-width: 992px) {
+        max-width: 360px;
       }
     }
 
