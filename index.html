@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="media/tigre.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Corinthia:wght@400;700&family=Merienda:wght@300..900&display=swap"
       rel="stylesheet"
     />
     <title>Diana e Emanuel - 27-06-2026</title>
@@ -15,16 +16,17 @@
     body {
       display: flex;
       flex-direction: column;
-      gap: 30px;
       align-items: center;
+      gap: 30px;
 
       margin: 0;
-
-      background-color: #fbf5f0;
+      background-color: #dae0d1;
     }
 
     section {
-      width: 90%;
+      padding: 15px;
+      background-color: #fbf5f0;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
 
     h1 {
@@ -32,7 +34,7 @@
     }
 
     h2 {
-      font-size: 90px;
+      font-size: 75px;
     }
 
     h3 {
@@ -49,6 +51,14 @@
       font-style: normal;
     }
 
+    p,
+    a {
+      font-family: "Merienda", cursive;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+    }
+
     iframe {
       border: 0;
       padding: 20px;
@@ -57,56 +67,89 @@
 
     .title {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
 
       width: 100%;
+      padding: 0;
       background-color: #dae0d1;
-      padding-bottom: 20px;
+      box-shadow: none;
     }
 
-    .title > h1 {
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .title h1,
+    .title h2 {
       text-shadow: 2px 2px 2px #fbf5f0;
-    }
-
-    .title > h1,
-    .title > h3 {
       line-height: 60px;
       color: #2e3c25;
+    }
+
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      width: 1000px;
+
+      padding: 20px;
+    }
+
+    .countdown {
+      display: flex;
+      justify-content: space-evenly;
+
+      gap: 30px;
+
+      line-height: 2px;
+    }
+
+    .countdown section {
+      width: 25%;
+      text-align: center;
+
+      h3,
+      p {
+        font-family: "Agdasima", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    }
+
+    #igreja-img,
+    #quinta-img {
+      object-fit: cover;
+      width: 100%;
+    }
+
+    #igreja-img {
+      height: 420px;
+    }
+
+    #quinta-img {
+      object-position: 0px -216px;
+      height: 513px;
     }
 
     #diana_emanuel_img {
       max-width: 360px;
     }
 
-    .details-container {
+    .drawings-container {
       display: flex;
-    }
 
-    .details-text-container {
-      width: 40%;
-    }
+      height: 400px;
+      width: 100%;
 
-    .details-img-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 60%;
-    }
-
-    .details-img-container img {
-      width: 60%;
-      box-shadow:
-        rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    }
-
-    .rotate-clockwise {
-      transform: rotate(6deg);
-    }
-
-    .rotate-anticlockwise {
-      transform: rotate(-6deg);
+      img {
+        object-fit: cover;
+        width: 50%;
+      }
     }
   </style>
   <script>
@@ -129,54 +172,104 @@
   </script>
   <body>
     <section class="title">
-      <h1>Diana e Emanuel</h1>
-      <img
-        src="media/Diana_E_Emanuel_2-color_transparent.png"
-        alt="diana_e_emanuel"
-        id="diana_emanuel_img"
-      />
+      <div class="header-container">
+        <h1>Diana e Emanuel</h1>
+        <img
+          src="media/diana_e_emanuel_no_bg.png"
+          alt="diana_e_emanuel"
+          id="diana_emanuel_img"
+        />
+      </div>
+      <h2>27 junho 2026</h2>
     </section>
-    <h2>27 junho 2026</h2>
-    <div>
-      <p>
-        Faltam
-        <span id="countdown_days">-</span>
-        dias
-        <span id="countdown_hours">-</span>
-        horas
-        <span id="countdown_minutes">-</span>
-        minutos
-        <span id="countdown_seconds">-</span>
-        segundos
+    <div class="main-container">
+      <div class="countdown">
+        <section>
+          <h3 id="countdown_days">-</h3>
+          <p>DIAS</p>
+        </section>
+        <section>
+          <h3 id="countdown_hours">-</h3>
+          <p>HORAS</p>
+        </section>
+        <section>
+          <h3 id="countdown_minutes">-</h3>
+          <p>MINUTOS</p>
+        </section>
+        <section>
+          <h3 id="countdown_seconds">-</h3>
+          <p>SEGUNDOS</p>
+        </section>
+      </div>
+      <section>
+        <h2>Querida Família e Amigos</h2>
+        <p>
+          É com especial carinho que partilhamos convosco este convite para
+          celebrarmos o nosso casamento. Imaginar este dia é, para nós, imaginar
+          a felicidade de vos ter ao nosso lado, a partilhar um momento único,
+          celebrando o Amor e a Família que sonhamos construir.
+          <br />Será uma alegria imensa celebrar este dia rodeados de quem nos é
+          mais querido!
+        </p>
+        <p>
+          <i>
+            "Que venha o sol, o vinho e as flores<br />
+            Marés, canções todas as cores<br />
+            Guerras esquecidas por amores<br /><br />
+            Que venham já trazendo abraços<br />
+            Vistam sorrisos de palhaços<br />
+            Esqueçam tristezas e cansaços<br /><br />
+            Que tragam todos os festejos<br />
+            E ninguém se esqueça de beijos<br />
+            Que tragam prendas de alegria<br />
+            E a festa dure até ser dia"<br />
+          </i>
+          in A festa da vida
+        </p>
+      </section>
+      <section>
+        <h2>Cerimónia</h2>
+        <img src="media/igreja_no_bg.png" alt="igreja" id="igreja-img" />
+        <div class="details-text-container">
+          <p>Igreja Paroquial de São Martinho de Cedofeita</p>
+          <p>14:00 horas</p>
+          <a href="https://maps.app.goo.gl/3aMWKVRYYaE8WNm96">Localização</a>
+        </div>
+      </section>
+      <section>
+        <h2>Copo de Água</h2>
+        <img src="media/quinta_no_bg.png" alt="quinta" id="quinta-img" />
+        <div class="details-text-container">
+          <p>Quinta Alferes de Crasto</p>
+          <a href="https://maps.app.goo.gl/UtHQuoD1SBsNyBK58">Localização</a>
+        </div>
+      </section>
+      <section>
+        <p>Por favor confirmem a vossa presença clicando no tigre!</p>
+        <div style="width: 100%; text-align: center">
+          <a href="">
+            <img src="media/tigre.png" alt="tigre_foi_facil" />
+          </a>
+        </div>
+      </section>
+      <section>
+        <p>
+          Felizmente não existe presente que se possa comprar capaz de nos fazer
+          hoje mais felizes.
+        </p>
+        <p>
+          No entanto, e se ainda assim gostarem de contribuir para a nossa Lua
+          de Mel, podem fazê-lo através de um dos seguintes métodos:
+        </p>
+        <p>IBAN: xxxxxxxx<br />Titular: YYYY</p>
+        <p>Diana Leite: 91 666 56 13</p>
+        <p>Emanuel Sousa: 91 249 31 36</p>
+      </section>
+      <p style="font-size: 15px; text-align: center">
+        Desenhos feitos pela
+        <a href="https://www.instagram.com/ritaoak_art/?hl=en">Rita Oak</a>.
+        Site feito pelos noivos.
       </p>
     </div>
-    <section>
-      <h3>Querida Família e Amigos</h3>
-      <p>
-        É com muita alegria que vos convidamos para o nosso casamento!
-        Gostávamos muito de contar convosco!
-      </p>
-    </section>
-    <h3>Cerimónia</h3>
-    <section class="details-container">
-      <div class="details-text-container">
-        <p>Igreja Paroquial de São Martinho de Cedofeita</p>
-        <p>14:00.</p>
-        <a href="https://maps.app.goo.gl/3aMWKVRYYaE8WNm96">Localização</a>
-      </div>
-      <div class="details-img-container rotate-clockwise">
-        <img src="media/igreja_color.png" alt="igreja" />
-      </div>
-    </section>
-    <h3>Copo de Água</h3>
-    <section class="details-container">
-      <div class="details-img-container rotate-anticlockwise">
-        <img src="media/quinta_color.png" alt="quinta" />
-      </div>
-      <div class="details-text-container">
-        <p>Quinta Alferes de Crasto</p>
-        <a href="https://maps.app.goo.gl/UtHQuoD1SBsNyBK58">Localização</a>
-      </div>
-    </section>
   </body>
 </html>
