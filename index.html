@@ -29,48 +29,6 @@
       box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
 
-    h1 {
-      @media (max-width: 600px) {
-        font-size: 60px;
-      }
-
-      @media (min-width: 600px) {
-        font-size: 90px;
-      }
-
-      @media (min-width: 992px) {
-        font-size: 120px;
-      }
-    }
-
-    h2 {
-      @media (max-width: 600px) {
-        font-size: 45px;
-      }
-
-      @media (min-width: 600px) {
-        font-size: 60px;
-      }
-
-      @media (min-width: 992px) {
-        font-size: 75px;
-      }
-    }
-
-    h3 {
-      @media (max-width: 600px) {
-        font-size: 30px;
-      }
-
-      @media (min-width: 600px) {
-        font-size: 45px;
-      }
-
-      @media (min-width: 992px) {
-        font-size: 60px;
-      }
-    }
-
     h1,
     h2,
     h3 {
@@ -112,16 +70,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
-      @media (max-width: 600px) {
-        flex-direction: column;
-        flex-direction: column-reverse;
-      }
-
-      @media (min-width: 600px) {
-        flex-direction: column;
-        flex-direction: column-reverse;
-      }
     }
 
     .title h1,
@@ -138,11 +86,6 @@
 
       max-width: 95%;
       padding: 20px;
-
-      @media (min-width: 992px) {
-        max-width: 980px;
-        padding: 0;
-      }
     }
 
     .countdown {
@@ -157,31 +100,13 @@
     .countdown section {
       width: 25%;
       text-align: center;
-
-      h3,
-      p {
-        font-family: "Agdasima", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-
-      @media (max-width: 600px) {
-        padding: 5px;
-      }
     }
 
-    #diana_emanuel_img {
-      @media (max-width: 600px) {
-        max-width: 260px;
-      }
-
-      @media (min-width: 600px) {
-        max-width: 300px;
-      }
-
-      @media (min-width: 992px) {
-        max-width: 360px;
-      }
+    .countdown section h3,
+    .countdown section p {
+      font-family: "Agdasima", sans-serif;
+      font-weight: 400;
+      font-style: normal;
     }
 
     #igreja-img,
@@ -190,9 +115,80 @@
       margin-top: 10px;
     }
 
-    #tigre-img {
-      @media (max-width: 600px) {
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 60px;
+      }
+
+      h2 {
+        font-size: 45px;
+      }
+
+      h3 {
+        font-size: 30px;
+      }
+
+      .header-container {
+        flex-direction: column;
+        flex-direction: column-reverse;
+      }
+
+      .countdown section {
+        padding: 5px;
+      }
+
+      #diana_emanuel_img {
+        max-width: 260px;
+      }
+
+      #tigre-img {
         width: 100px;
+      }
+    }
+
+    @media (min-width: 600px) {
+      h1 {
+        font-size: 90px;
+      }
+
+      h2 {
+        font-size: 60px;
+      }
+
+      h3 {
+        font-size: 45px;
+      }
+
+      .header-container {
+        flex-direction: column;
+        flex-direction: column-reverse;
+      }
+
+      #diana_emanuel_img {
+        max-width: 300px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      h1 {
+        font-size: 120px;
+      }
+
+      h2 {
+        font-size: 75px;
+      }
+
+      h3 {
+        font-size: 60px;
+      }
+
+      .main-container {
+        max-width: 980px;
+        padding: 0;
+      }
+
+      #diana_emanuel_img {
+        max-width: 360px;
       }
     }
   </style>
