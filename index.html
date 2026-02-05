@@ -195,7 +195,7 @@
   <script>
     var juneTwentySeventhET = 1782514800;
 
-    setInterval(() => {
+    function updateCountdown() {
       var timeRemaining = juneTwentySeventhET - Date.now() / 1000;
       var daysRemaining = Math.floor(timeRemaining / 60 / 60 / 24);
       var hoursRemaining = Math.floor(timeRemaining / 60 / 60) % 60;
@@ -208,7 +208,11 @@
         minutesRemaining;
       document.querySelector("#countdown_seconds").textContent =
         secondsRemaining;
-    }, 500);
+    }
+
+    window.addEventListener("DOMContentLoaded", updateCountdown);
+
+    setInterval(updateCountdown, 1000);
   </script>
   <body>
     <section class="title">
