@@ -12,11 +12,7 @@
     />
     <title>Diana e Emanuel - 27-06-2026</title>
   </head>
-  <script
-    src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2"
-    async
-    defer
-  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
   <style>
     body {
       display: flex;
@@ -203,16 +199,14 @@
     function updateCountdown() {
       var timeRemaining = juneTwentySeventhET - Date.now() / 1000;
       var daysRemaining = Math.floor(timeRemaining / 60 / 60 / 24);
-      var hoursRemaining = Math.floor(timeRemaining / 60 / 60) % 60;
+      var hoursRemaining = Math.floor(timeRemaining / 60 / 60) % 24;
       var minutesRemaining = Math.floor(timeRemaining / 60) % 60;
       var secondsRemaining = Math.floor(timeRemaining) % 60;
 
       document.querySelector("#countdown_days").textContent = daysRemaining;
       document.querySelector("#countdown_hours").textContent = hoursRemaining;
-      document.querySelector("#countdown_minutes").textContent =
-        minutesRemaining;
-      document.querySelector("#countdown_seconds").textContent =
-        secondsRemaining;
+      document.querySelector("#countdown_minutes").textContent = minutesRemaining;
+      document.querySelector("#countdown_seconds").textContent = secondsRemaining;
     }
 
     window.addEventListener("DOMContentLoaded", updateCountdown);
@@ -223,11 +217,7 @@
     <section class="title">
       <div class="header-container">
         <h1>Diana e Emanuel</h1>
-        <img
-          src="media/diana_e_emanuel_no_bg2_360w.png"
-          alt="diana_e_emanuel"
-          id="diana_emanuel_img"
-        />
+        <img src="media/diana_e_emanuel_no_bg2_360w.png" alt="diana_e_emanuel" id="diana_emanuel_img" />
       </div>
       <h2>27 junho 2026</h2>
     </section>
@@ -268,12 +258,10 @@
       <section>
         <h2>Querida Família e Amigos</h2>
         <p>
-          É com especial carinho que partilhamos convosco este convite para
-          celebrarmos o nosso casamento. Imaginar este dia é, para nós, imaginar
-          a felicidade de vos ter ao nosso lado, a partilhar um momento único,
-          celebrando o Amor e a Família que sonhamos construir.
-          <br /><br />Será uma alegria imensa festejar este dia rodeados de quem
-          nos é mais querido!
+          É com especial carinho que partilhamos convosco este convite para celebrarmos o nosso casamento. Imaginar este
+          dia é, para nós, imaginar a felicidade de vos ter ao nosso lado, a partilhar um momento único, celebrando o
+          Amor e a Família que sonhamos construir.
+          <br /><br />Será uma alegria imensa festejar este dia rodeados de quem nos é mais querido!
         </p>
         <br />
         <p>
@@ -296,23 +284,10 @@
       <section>
         <h2>Cerimónia</h2>
         <picture>
-          <source
-            media="(width >= 992px)"
-            srcset="media/igreja_no_bg_cropped_950w.png"
-          />
-          <source
-            media="(width >= 600px)"
-            srcset="media/igreja_no_bg_cropped_895w.png"
-          />
-          <source
-            media="(width < 600px)"
-            srcset="media/igreja_no_bg_cropped_512w.png"
-          />
-          <img
-            src="media/igreja_no_bg_cropped_950w.png"
-            alt="igreja"
-            id="igreja-img"
-          />
+          <source media="(width >= 992px)" srcset="media/igreja_no_bg_cropped_950w.png" />
+          <source media="(width >= 600px)" srcset="media/igreja_no_bg_cropped_895w.png" />
+          <source media="(width < 600px)" srcset="media/igreja_no_bg_cropped_512w.png" />
+          <img src="media/igreja_no_bg_cropped_950w.png" alt="igreja" id="igreja-img" />
         </picture>
         <div class="details-text-container">
           <p>Igreja Paroquial de São Martinho de Cedofeita</p>
@@ -323,23 +298,10 @@
       <section>
         <h2>Copo de Água</h2>
         <picture>
-          <source
-            media="(width >= 992px)"
-            srcset="media/quinta_no_bg_cropped_950w.png"
-          />
-          <source
-            media="(width >= 600px)"
-            srcset="media/quinta_no_bg_cropped_895w.png"
-          />
-          <source
-            media="(width < 600px)"
-            srcset="media/quinta_no_bg_cropped_512w.png"
-          />
-          <img
-            src="media/quinta_no_bg_cropped_950w.png"
-            alt="quinta"
-            id="quinta-img"
-          />
+          <source media="(width >= 992px)" srcset="media/quinta_no_bg_cropped_950w.png" />
+          <source media="(width >= 600px)" srcset="media/quinta_no_bg_cropped_895w.png" />
+          <source media="(width < 600px)" srcset="media/quinta_no_bg_cropped_512w.png" />
+          <img src="media/quinta_no_bg_cropped_950w.png" alt="quinta" id="quinta-img" />
         </picture>
         <div class="details-text-container">
           <p>Quinta Alferes de Crasto</p>
@@ -347,10 +309,7 @@
         </div>
       </section>
       <section>
-        <p>
-          Por favor confirmem a vossa presença <b>até dia 20 de maio</b>. Podem
-          confirmar clicando no tigre!
-        </p>
+        <p>Por favor confirmem a vossa presença <b>até dia 20 de maio</b>. Podem confirmar clicando no tigre!</p>
         <div style="width: 100%; text-align: center">
           <audio src="media/cat-meow.mp3" id="cat-sound" preload="auto"></audio>
           <a
@@ -363,25 +322,18 @@
         </div>
       </section>
       <section>
+        <p>Felizmente não existe presente que se possa comprar capaz de nos fazer hoje mais felizes.</p>
         <p>
-          Felizmente não existe presente que se possa comprar capaz de nos fazer
-          hoje mais felizes.
+          No entanto, e se ainda assim gostarem de contribuir para a nossa Lua de Mel, podem fazê-lo através de um dos
+          seguintes métodos:
         </p>
-        <p>
-          No entanto, e se ainda assim gostarem de contribuir para a nossa Lua
-          de Mel, podem fazê-lo através de um dos seguintes métodos:
-        </p>
-        <p>
-          IBAN: PT50 0018 0001 00200262911 51<br />Titular: Diana Martins
-          Abrantes Leite
-        </p>
+        <p>IBAN: PT50 0018 0001 00200262911 51<br />Titular: Diana Martins Abrantes Leite</p>
         <p>Diana Leite: 91 666 56 13</p>
         <p>Emanuel Sousa: 91 249 31 36</p>
       </section>
       <p style="font-size: 15px; text-align: center">
         Desenhos feitos pela
-        <a href="https://www.instagram.com/ritaoak_art/?hl=en">Rita Oak</a>.
-        Site feito pelos noivos.
+        <a href="https://www.instagram.com/ritaoak_art/?hl=en">Rita Oak</a>. Site feito pelos noivos.
       </p>
     </div>
   </body>
